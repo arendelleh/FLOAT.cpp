@@ -1,0 +1,5 @@
+*.exe
+*.o
+float-data.txt*
+peraprudent-data.txt*
+build/
