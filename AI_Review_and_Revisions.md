@@ -24,5 +24,6 @@ The draft was checked against all eight project files, successful C++ compilatio
 Comments are inserted in Calculations.cpp. Original files are retained in original_source.
 
 
-Final Gemini review of the corrected C++ README and User Guide is still pending. Actual student screenshots verify the PHP 500.00 income save/view example.
+Final Gemini review: https://share.gemini.google/Wxw9sVmN2l1v . Accepted and applied the complete eight-file list, legacy storage explanation, and separate overdue/no-future-payment troubleshooting. Verified these against the local source. Student screenshots verify the PHP 500.00 income save/view example.
+
 

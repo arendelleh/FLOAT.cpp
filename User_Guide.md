@@ -6,7 +6,7 @@ FLOAT helps a local user record irregular income, expenses, bills, and savings a
 
 ## Requirements and setup
 
-Use a computer with a C++17 compiler and terminal. Keep all eight .cpp/.h files in one folder. In VS Code, open that folder and choose Terminal > New Terminal. The folder must permit writing local save files.
+Use a computer with a C++17 compiler and terminal. Keep these eight files in one folder: main.cpp, Records.h, Calculations.cpp, Calculations.h, InputValidation.cpp, InputValidation.h, FileStorage.cpp, and FileStorage.h. In VS Code, open that folder and choose Terminal > New Terminal. The folder must permit writing local save files.
 
 ## Launch
 
@@ -40,9 +40,14 @@ The student screenshots from November 24, 2026 confirm successful saving and vie
 | Source file missing | Open the terminal in the folder containing all eight source files. |
 | Invalid input | Follow the displayed amount, date, text, or menu requirements. |
 | Cannot load records or save failed | Keep the existing files and inspect the reported storage error. Do not overwrite potentially useful recovery data. |
-| No daily estimate | Add or reschedule a pending payment to a future date. Resolve any reported spending shortfall. |
+| No future pending payment | Add or reschedule a pending payment to a date after the planning date. |
+| Payment due or overdue | Update its expected date or record receipt. This warning alone does not prevent a plan if another future payment exists. |
+| Spending shortfall | Review expenses, bills, savings, and received income; no positive daily limit is available while spendable funds are negative. |
 
 ## Limitations
 
 Manual entries and expected dates may be inaccurate. Expected income is excluded until received. All unpaid bills and reserved savings reduce spending funds. There is no bank connection, login system, or graphical interface.
+
+
+New folders use float-data.txt. Existing legacy peraprudent-data.txt files, including .bak or .tmp recovery files, take precedence when choosing the storage path. Keep these files safe.
 
