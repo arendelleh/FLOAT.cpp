@@ -35,27 +35,27 @@ After compilation succeeds:
 .\FLOAT.exe
 ```
 
-Windows Application Control may block execution on this student's device. Record that restriction honestly and obtain runtime evidence on a permitted working computer; successful compilation alone is not runtime verification.
+The student successfully launched this C++ build and verified income entry and viewing on November 24, 2026. Earlier execution restrictions do not describe this observed run.
 
 ## Usage example
 
-In a clean demo folder with no saved financial data, select option 1 and enter:
+Verified student example on November 24, 2026, starting with no saved records: select option 1 and enter:
 
 ```text
-Source: Sample allowance
+Source: sample allowance
 Date received (YYYY-MM-DD): 2026-11-24
 Amount received (pesos): 500.00
-Description: Documentation demo
+Description: docu demo
 Saved successfully.
 ```
 
-Select option 2. On a clean account, the expected record is:
+Selecting option 2 displayed:
 
 ```text
-1 | 2026-11-24 | Sample allowance | PHP 500.00 | Documentation demo
+1 | 2026-11-24 | sample allowance | PHP 500.00 | docu demo
 ```
 
-Actual IDs depend on existing records. This is an expected transcript until verified on the documented build. Exit with option 0. Successful mutations are saved immediately.
+Actual IDs depend on existing records. The screenshots verify this example, not every application feature. Exit with option 0. Successful mutations are saved immediately.
 
 ## Input and output
 
@@ -87,4 +87,5 @@ Add a graphical interface, clearer recovery options, permanent transaction links
 ## Credits
 
 FLOAT was developed as a group project by Erin Dale T. Gaetos, Louie Emanuel B. Gravidez, and Timothy Michael M. Uy. This separate TA5 copy preserves that attribution and adds software documentation. Original group repository: https://github.com/arendelleh/CS0053-TN35-GitLTE-FLOAT .
+
 

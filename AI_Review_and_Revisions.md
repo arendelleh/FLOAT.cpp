@@ -39,6 +39,7 @@ Comments are in Calculations.cpp. The original unmodified files are preserved in
 | State all unpaid bills are reserved. | Accept | Matches calculation behavior, even for later due dates. |
 | Describe successful compilation as proof of runtime correctness. | Reject | Execution and output need separate evidence. |
 
-## Student verification still required
+## Student verification evidence
 
-Capture source/comment screenshots and a successful C++ run using the documented example. If Windows blocks execution, retain the actual error and obtain runtime evidence on a permitted working machine. Do not reuse Java screenshots as C++ evidence. Save the final User Guide as PDF or DOCX as required by the template.
+The November 24 student screenshots confirm successful C++ startup, saving sample allowance for PHP 500.00, and viewing the exact record. Source/comment screenshots and the User Guide PDF or DOCX export are still needed. These results do not establish that every program workflow was tested.
+

@@ -26,11 +26,11 @@ If compilation succeeds, run `.\FLOAT.exe` on Windows. If execution is blocked b
 4. Use 15 for reserved savings, 16 for the summary, or 17 for the daily spending plan.
 5. Enter 0 at the main menu to exit. Successful changes are saved immediately.
 
-## Example to verify
+## Verified example
 
-On a clean demo account, add Sample allowance dated 2026-11-24 for PHP 500.00 with description Documentation demo. The program should display `Saved successfully.` Viewing income should show `1 | 2026-11-24 | Sample allowance | PHP 500.00 | Documentation demo`. Existing accounts can have a different ID.
+On a clean demo account, add sample allowance dated 2026-11-24 for PHP 500.00 with description docu demo. The student run displayed `Saved successfully.` Viewing income displayed `1 | 2026-11-24 | sample allowance | PHP 500.00 | docu demo`. Existing accounts can have a different ID.
 
-This transcript must be confirmed on the actual build before being labelled a verified example in the report.
+The student screenshots from November 24, 2026 confirm successful saving and viewing of this record.
 
 ## Troubleshooting
 
@@ -45,3 +45,4 @@ This transcript must be confirmed on the actual build before being labelled a ve
 ## Limitations
 
 Manual entries and expected dates may be inaccurate. Expected income is excluded until received. All unpaid bills and reserved savings reduce spending funds. There is no bank connection, login system, or graphical interface.
+
