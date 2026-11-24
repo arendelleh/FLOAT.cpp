@@ -1,45 +1,28 @@
-# TA5 Documentation Review
+# Gemini Draft Verification and Revisions
 
-This record concerns the C++ FLOAT copy, not the earlier Java Notify drafts. ChatGPT analyzed the existing source and prepared an initial README, revised README, and comments following the student's request to set up the C++ activity. Keep the actual conversation as prompt evidence.
+Source conversation: https://share.gemini.google/HwfVELD90GYE
 
-## Three verified analysis statements
+## Part D — Human Verification and Editing
 
-| Statement | Classification | Evidence |
-| :--- | :--- | :--- |
-| Expected income is excluded from the received-income total. | Correct | totalIncomeCentavos iterates receivedIncomes only. |
-| All unpaid bills and savings reduce spendable funds. | Correct | spendableBalanceCentavos deducts unpaidBillsCentavos and reservedSavingsCentavos. |
-| Successful changes are saved before replacing active records. | Correct | persist calls saveData and assigns active only after success. |
+The draft was checked against all eight project files, successful C++ compilation, and the student's actual income-entry/viewing screenshots. The revised README uses the observed PHP 500.00 example rather than presenting Gemini's PHP 1500.50 illustration as a tested result.
 
-## Revision table
-
-The instructor template permits factual checks when fewer than two factual errors are found. No factual error was found in the two checked claims below.
-
-| Type | Original draft | Revised or verified finding | Evidence / reason |
+| Type of edit | Original AI output / claim | Revision or verified finding | Reason / evidence |
 | :--- | :--- | :--- | :--- |
-| Factual check 1 | Expected income is excluded until received. | No factual error found. | The total sums receivedIncomes; receivePayment creates received income. |
-| Factual check 2 | All unpaid bills are reserved. | No factual error found. | unpaidBillsCentavos includes every unpaid bill without a due-date filter. |
-| Clarity 1 | Compilation and execution appear together. | Separate build and run steps, with run conditional on successful compilation. | Prevents confusing a failed build with a successful run. |
-| Organization 2 | Project files described in one paragraph. | Added a file/responsibility table. | Easier to locate modules. |
-| Missing information | Storage filenames and legacy selection not explained. | Added float-data.txt, legacy path, and recovery-file guidance. | dataPath checks legacy files and otherwise selects float-data.txt. |
+| Factual correction 1 | Records.h provides nextRecordId. | nextRecordId is declared in InputValidation.h and implemented in InputValidation.cpp. Records.h defines the data structures. | Verified the declaration and definition in the actual files. |
+| Factual correction 2 | File persistence is labelled under “Data file (stdout / FileStorage.h).” | Console output uses cout/cerr; disk saving/loading is implemented in FileStorage.cpp. FileStorage.h declares that interface. | FileStorage.cpp includes fstream and implements saveData/loadData; stdout is not the save file. |
+| Clarity / organization 1 | Run instructions mainly describe internal startup operations. | Added short user actions and separated build from run. | Beginners can follow the commands without tracing internal helpers. |
+| Clarity / organization 2 | File responsibilities appear in a long list. | Replaced the list with a compact file/responsibility table. | Makes the multi-file structure easier to scan. |
+| Missing information added | No exact build/run command was provided because only main.cpp was supplied. | Added the C++17 command compiling all four .cpp files and the Windows run command. | The complete source compiled successfully, and the student ran the resulting program. |
 
-## Two documented functions
+## Part E — Document Two C++ Functions
 
-| Function | Comment contents | Verification |
+| Selected function | Documentation added | Accuracy verification |
 | :--- | :--- | :--- |
-| totalIncomeCentavos | Purpose, AppData parameter, centavo return, zero case, excluded expected payments, and overflow/negative-amount exception. | Compared with its receivedIncomes loop and addAmount checks. |
-| dailySpendingLimitCentavos | Data/days parameters, zero cases, integer division, deductions, exception, and date-selection limitation. | Compared with the early return and spendable balance calculation. |
+| totalIncomeCentavos | Sums received income in centavos without changing data. Takes AppData, returns zero for no income, excludes expected payments, and throws overflow_error for negative amounts or an overflowing total. | Compared the comment with the receivedIncomes loop and addAmount checks. |
+| dailySpendingLimitCentavos | Takes account data and days to cover. Returns zero for nonpositive days or funds; otherwise divides spendable centavos by days using integer division. Notes deductions, overflow exceptions, and that the caller handles date selection. | Compared the comment with its early return, spendable calculation, and integer division. |
 
-Comments are in Calculations.cpp. The original unmodified files are preserved in original_source/.
+Comments are inserted in Calculations.cpp. Original files are retained in original_source.
 
-## Final review decisions
 
-| Suggestion | Decision | Reason |
-| :--- | :--- | :--- |
-| Explain that expected income is excluded. | Accept | Matches totalIncomeCentavos and avoids overstating available money. |
-| State all unpaid bills are reserved. | Accept | Matches calculation behavior, even for later due dates. |
-| Describe successful compilation as proof of runtime correctness. | Reject | Execution and output need separate evidence. |
-
-## Student verification evidence
-
-The November 24 student screenshots confirm successful C++ startup, saving sample allowance for PHP 500.00, and viewing the exact record. Source/comment screenshots and the User Guide PDF or DOCX export are still needed. These results do not establish that every program workflow was tested.
+Final Gemini review of the corrected C++ README and User Guide is still pending. Actual student screenshots verify the PHP 500.00 income save/view example.
 

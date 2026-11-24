@@ -70,8 +70,8 @@ Current balance is received income minus recorded expenses. Spendable funds also
 | main.cpp | Startup, menu, record operations, summary, and planning |
 | Records.h | Shared records and AppData |
 | Calculations.cpp / .h | Totals, balances, and daily limit |
-| InputValidation.cpp / .h | Input parsing and record validation |
-| FileStorage.cpp / .h | Local save/load and recovery checks |
+| InputValidation.cpp / .h | Input parsing, record validation, and nextRecordId declaration/implementation |
+| FileStorage.cpp / .h | Implementation/declarations of local save/load and recovery checks; file I/O is separate from console output |
 | original_source/ | Unmodified project snapshot before adding TA5 comments |
 
 ## Storage and limitations
@@ -86,6 +86,7 @@ Add a graphical interface, clearer recovery options, permanent transaction links
 
 ## Credits
 
-FLOAT was developed as a group project by Erin, Louie, and Tim. This separate TA5 copy preserves that attribution and adds software documentation. Original group repository: https://github.com/arendelleh/CS0053-TN35-GitLTE-FLOAT .
+FLOAT was developed as a group project by Erin Dale T. Gaetos, Louie Emanuel B. Gravidez, and Timothy Michael M. Uy. This separate TA5 copy preserves that attribution and adds software documentation. Original group repository: https://github.com/arendelleh/CS0053-TN35-GitLTE-FLOAT .
+
 
 
