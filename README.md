@@ -86,6 +86,6 @@ Add a graphical interface, clearer recovery options, permanent transaction links
 
 ## Credits
 
-FLOAT was developed as a group project by Erin Dale T. Gaetos, Louie Emanuel B. Gravidez, and Timothy Michael M. Uy. This separate TA5 copy preserves that attribution and adds software documentation. Original group repository: https://github.com/arendelleh/CS0053-TN35-GitLTE-FLOAT .
+FLOAT was developed as a group project by Erin, Louie, and Tim. This separate TA5 copy preserves that attribution and adds software documentation. Original group repository: https://github.com/arendelleh/CS0053-TN35-GitLTE-FLOAT .
 
 
